@@ -15,7 +15,7 @@ const Form = () => {
             name: data.name,
             selector: data.selector
         }
-        fetch('http://localhost:5000/booking', {
+        fetch('https://coding-challenge-server-sable.vercel.app/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

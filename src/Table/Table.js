@@ -16,7 +16,7 @@ const Table = () => {
         queryKey: ['booking'],
         queryFn: async () => {
             try {
-                const res = await fetch('http://localhost:5000/booking', {
+                const res = await fetch('https://coding-challenge-server-sable.vercel.app/booking', {
                     headers: {
                       'content-type': 'application/json', 
                     }
@@ -32,7 +32,7 @@ const Table = () => {
 
     
     const handleDeleteDoctor = booking => {
-        fetch(`http://localhost:5000/booking/${booking._id}`, {
+        fetch(`https://coding-challenge-server-sable.vercel.app/booking/${booking._id}`, {
             method: 'DELETE', 
             headers: {
               'content-type': 'application/json', 
